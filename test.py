@@ -6,7 +6,7 @@ from random import randint
 from halo import Halo
 
 
-def likestool_login(browser):
+with Browser() as browser:
 browser.visit("http://legacy.likestool.com/")
 browser.fill('LoginForm[username]', 'hideemail2@hideemail.net')
 browser.fill('LoginForm[password]', 'oceaneyes0928')
